@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C879DFD229E85BAA00B2CE81 /* MultithreadingPrimitives.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C879DFC929E85BAA00B2CE81 /* MultithreadingPrimitives.framework */; };
-		C879DFD729E85BAA00B2CE81 /* MultithreadingPrimitivesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879DFD629E85BAA00B2CE81 /* MultithreadingPrimitivesTests.swift */; };
-		C879DFD829E85BAA00B2CE81 /* MultithreadingPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = C879DFCC29E85BAA00B2CE81 /* MultithreadingPrimitives.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C879DFE229E85BD800B2CE81 /* SerialQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879DFE129E85BD800B2CE81 /* SerialQueue.swift */; };
+		C879DFE429E85BF500B2CE81 /* SerialQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		C879DFC929E85BAA00B2CE81 /* MultithreadingPrimitives.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultithreadingPrimitives.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C879DFCC29E85BAA00B2CE81 /* MultithreadingPrimitives.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingPrimitives.h; sourceTree = "<group>"; };
 		C879DFD129E85BAA00B2CE81 /* MultithreadingPrimitivesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultithreadingPrimitivesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C879DFD629E85BAA00B2CE81 /* MultithreadingPrimitivesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultithreadingPrimitivesTests.swift; sourceTree = "<group>"; };
+		C879DFE129E85BD800B2CE81 /* SerialQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialQueue.swift; sourceTree = "<group>"; };
+		C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialQueueTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		C879DFCB29E85BAA00B2CE81 /* MultithreadingPrimitives */ = {
 			isa = PBXGroup;
 			children = (
-				C879DFCC29E85BAA00B2CE81 /* MultithreadingPrimitives.h */,
+				C879DFE129E85BD800B2CE81 /* SerialQueue.swift */,
 			);
 			path = MultithreadingPrimitives;
 			sourceTree = "<group>";
@@ -77,7 +77,7 @@
 		C879DFD529E85BAA00B2CE81 /* MultithreadingPrimitivesTests */ = {
 			isa = PBXGroup;
 			children = (
-				C879DFD629E85BAA00B2CE81 /* MultithreadingPrimitivesTests.swift */,
+				C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */,
 			);
 			path = MultithreadingPrimitivesTests;
 			sourceTree = "<group>";
@@ -89,7 +89,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C879DFD829E85BAA00B2CE81 /* MultithreadingPrimitives.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +143,7 @@
 				TargetAttributes = {
 					C879DFC829E85BAA00B2CE81 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 					C879DFD029E85BAA00B2CE81 = {
 						CreatedOnToolsVersion = 14.1;
@@ -191,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C879DFE229E85BD800B2CE81 /* SerialQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C879DFD729E85BAA00B2CE81 /* MultithreadingPrimitivesTests.swift in Sources */,
+				C879DFE429E85BF500B2CE81 /* SerialQueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +332,7 @@
 		C879DFDC29E85BAA00B2CE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -357,6 +359,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +368,7 @@
 		C879DFDD29E85BAA00B2CE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -399,6 +403,7 @@
 		C879DFDF29E85BAA00B2CE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -418,6 +423,7 @@
 		C879DFE029E85BAA00B2CE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
