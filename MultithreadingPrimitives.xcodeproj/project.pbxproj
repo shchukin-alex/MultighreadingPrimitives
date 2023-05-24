@@ -10,6 +10,8 @@
 		C879DFD229E85BAA00B2CE81 /* MultithreadingPrimitives.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C879DFC929E85BAA00B2CE81 /* MultithreadingPrimitives.framework */; };
 		C879DFE229E85BD800B2CE81 /* SerialQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879DFE129E85BD800B2CE81 /* SerialQueue.swift */; };
 		C879DFE429E85BF500B2CE81 /* SerialQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */; };
+		FAB4610A2A1E545200FBA143 /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB461092A1E545200FBA143 /* Semaphore.swift */; };
+		FAB4610C2A1E546100FBA143 /* SemaphoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4610B2A1E546100FBA143 /* SemaphoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		C879DFD129E85BAA00B2CE81 /* MultithreadingPrimitivesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultithreadingPrimitivesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C879DFE129E85BD800B2CE81 /* SerialQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialQueue.swift; sourceTree = "<group>"; };
 		C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialQueueTests.swift; sourceTree = "<group>"; };
+		FAB461092A1E545200FBA143 /* Semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semaphore.swift; sourceTree = "<group>"; };
+		FAB4610B2A1E546100FBA143 /* SemaphoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemaphoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		C879DFCB29E85BAA00B2CE81 /* MultithreadingPrimitives */ = {
 			isa = PBXGroup;
 			children = (
+				FAB461092A1E545200FBA143 /* Semaphore.swift */,
 				C879DFE129E85BD800B2CE81 /* SerialQueue.swift */,
 			);
 			path = MultithreadingPrimitives;
@@ -77,6 +82,7 @@
 		C879DFD529E85BAA00B2CE81 /* MultithreadingPrimitivesTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4610B2A1E546100FBA143 /* SemaphoreTests.swift */,
 				C879DFE329E85BF500B2CE81 /* SerialQueueTests.swift */,
 			);
 			path = MultithreadingPrimitivesTests;
@@ -191,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB4610A2A1E545200FBA143 /* Semaphore.swift in Sources */,
 				C879DFE229E85BD800B2CE81 /* SerialQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB4610C2A1E546100FBA143 /* SemaphoreTests.swift in Sources */,
 				C879DFE429E85BF500B2CE81 /* SerialQueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
