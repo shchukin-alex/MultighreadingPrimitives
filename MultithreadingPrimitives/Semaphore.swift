@@ -1,10 +1,3 @@
-//
-//  Semaphore.swift
-//  GCDTest
-//
-//  Created by Alex Shchukin on 2022-10-07.
-//
-
 import Foundation
 
 final class Semaphore {

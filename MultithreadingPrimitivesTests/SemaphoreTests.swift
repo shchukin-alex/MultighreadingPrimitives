@@ -6,7 +6,7 @@ import XCTest
 final class SemaphoreTests: XCTestCase {
     
     func testSemaphore() {
-        let serialQueue = DispatchQueue(label: "com.test.test")
+        let serialQueue = DispatchQueue(label: "com.test.testSemaphore")
         let semaphore = Semaphore(maxCount: 1)
         var result: [Int] = []
 
